@@ -1,0 +1,47 @@
+
+/* основне меню */
+#menu-bar{
+    background: var(--bg-block);
+    padding: 35px 0;
+}
+
+#menu-bar .container{
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: var(--green-ultralight);
+}
+
+#menu-bar span{
+    color: var(--green);
+    font-size: 22px;
+}
+
+#menu-bar span::after{
+    content: '\2023';
+    color: var(--green);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+#menu-bar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#menu-bar nav a{
+    color: var(--green);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 25px 0 0;
+    padding: 0 0 0 25px;
+
+    border-left: 1px solid var(--green-ultralight);
+    text-align: center;
+}
+
+#menu-bar nav a:first-child{
+    border:none;
+}

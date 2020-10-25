@@ -1,0 +1,106 @@
+/* ///////
+start root
+/////// */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'SegoeUI-Bold';
+    src: url('../fonts/SegoeUI-Bold.eot');
+    src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg'),
+          url('../fonts/SegoeUI-Bold.ttf') format('truetype'),
+          url('../fonts/SegoeUI-Bold.woff') format('woff'),
+          url('../fonts/SegoeUI-Bold.woff2') format('woff2');
+  
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light: #fff; /* білий */
+    --dark: #1a1a1a; /* чорний */
+
+    --green-ultralight: #88a092; /* риска в меню */
+    --green-light: #89a192;
+    --green: rgb(3, 104, 56);
+    --green-dark: #006837; /* іконки, півжирний заголовок, пункт меню */ /* 009245 */
+
+    --gray-dark: #333; /* текст */
+    --gray: #4e4d4d;
+    --gray-light: #f2f2f2; /* navbar, footer */
+
+    --bg-block: #e1ede6; /* окремий блок з фоном, menubar */
+    --gradient: linear-gradient(90deg, #006837 0%, #009245 100%); /* градієнт для кнопки*/
+    --radius: 50px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+a,
+button:hover{
+    transition: .5s;
+}
+
+/* текст і лінки у такому блоці -- зелені */
+.text-green{
+    color: var(--green);
+}
+
+.text-green a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.text-green a:hover{
+    text-decoration: none;
+}
+
+/* grid */
+.container{
+    display: grid;
+    width: 1200px;
+    margin: auto;
+}
+
+/* green button */
+.button{
+    display: inline-block;
+    background: var(--gradient);
+    padding: 15px 25px;
+    border-radius: var(--radius);
+    color: var(--light);
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(3,104,56,.5);
+}
+
+/* white button */
+.button.bg-white{
+    background: var(--light);
+    color: var(--gray-dark);
+    border: 2px solid var(--green);
+    padding: 14px 23px;
+    box-shadow: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "SegoeUI-Bold", sans-serif;
+}
+
+/* /////
+end root
+///// */

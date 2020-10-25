@@ -1,0 +1,24 @@
+/* logo + quick links */
+#nav-bar{
+    background: var(--gray-light);
+    padding: 20px 0;
+}
+
+#nav-bar .container{
+    grid-template-columns: auto 1fr;
+    align-items: center; 
+}
+
+#logo{}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-links a{
+    color: var(--gray-dark);
+    text-decoration: none;
+    font-weight: 500;
+}

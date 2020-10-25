@@ -1,0 +1,6 @@
+/* блок "чому ми" */
+#about-bar{
+    background: var(--bg-block);
+    padding: 100px 0;
+}
+
