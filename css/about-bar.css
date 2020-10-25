@@ -4,3 +4,27 @@
     padding: 100px 0;
 }
 
+#about-bar svg{
+    width: 44px;
+    margin: 0 0 22px;
+}
+
+#about-bar section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+    align-items: top;
+}
+
+#about-bar h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 0 0 20px;
+}
+
+#about-bar p{
+    font-size: 16px;
+    color: var(--gray-dakr);
+}

@@ -13,7 +13,7 @@ start root
           url('../fonts/SegoeUI-Bold.woff') format('woff'),
           url('../fonts/SegoeUI-Bold.woff2') format('woff2');
   
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -30,7 +30,7 @@ start root
 
     --green-ultralight: #88a092; /* риска в меню */
     --green-light: #89a192;
-    --green: rgb(3, 104, 56);
+    --green: #036838;
     --green-dark: #006837; /* іконки, півжирний заголовок, пункт меню */ /* 009245 */
 
     --gray-dark: #333; /* текст */
@@ -99,6 +99,33 @@ button:hover{
 
 h1,h2,h3,h4,h5{
     font-family: "SegoeUI-Bold", sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "SegoeUI-Bold", sans-serif;
+    color: var(--dark);
+    margin: 0 0 40px;
+    font-weight: bold;
+}
+
+.title-left{
+    text-align: left;
+    font-size: 40px;
+    font-family: "SegoeUI-Bold", sans-serif;
+    color: var(--dark);
+    margin: 0 0 40px;
+    font-weight: bold;
+}
+
+/* підпис під заголовком */
+.lead{
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0 auto 80px;
+    width: 80%;
+    text-align: center;
 }
 
 /* /////

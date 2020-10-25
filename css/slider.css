@@ -15,18 +15,18 @@
 }
 
 #slider .item-text{
-    width: 50%;
+    width: 55%;
 }
 
 #slider .item-image{
-    width: 50%;
+    width: 45%;
 }
 
 #slider h3{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: -2px;
+    /* letter-spacing: -2px; */
     margin: 0 0 30px;
 }
 
