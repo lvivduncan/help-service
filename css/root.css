@@ -33,9 +33,10 @@ start root
     --green: #036838;
     --green-dark: #006837; /* іконки, півжирний заголовок, пункт меню */ /* 009245 */
 
-    --gray-dark: #333; /* текст */
-    --gray: #4e4d4d;
+    --gray-ultralight: #808080; /* від 250 грн */
     --gray-light: #f2f2f2; /* navbar, footer */
+    --gray: #4e4d4d;
+    --gray-dark: #333; /* текст */
 
     --bg-block: #e1ede6; /* окремий блок з фоном, menubar */
     --gradient: linear-gradient(90deg, #006837 0%, #009245 100%); /* градієнт для кнопки*/
@@ -54,15 +55,19 @@ button:hover{
     transition: .5s;
 }
 
+img{
+    max-width: 100%!important;
+}
+
 /* текст і лінки у такому блоці -- зелені */
-.text-green{
+/* .text-green{
     color: var(--green);
 }
 
 .text-green a{
     color: var(--green);
     text-decoration: underline;
-}
+} */
 
 .text-green a:hover{
     text-decoration: none;
@@ -86,6 +91,9 @@ button:hover{
     text-align: center;
     text-decoration: none;
     box-shadow: 0 10px 20px rgba(3,104,56,.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 
 /* white button */
@@ -126,6 +134,48 @@ h1,h2,h3,h4,h5{
     margin: 0 auto 80px;
     width: 80%;
     text-align: center;
+}
+
+.lead-left{
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0 0 80px;
+    width: 80%;
+    text-align: left;
+}
+
+
+/* блок з іконкою вгорі */
+.contact{
+    text-align: center;
+}
+
+.contact a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.contact a:hover{
+    text-decoration: none;
+}
+
+.contact svg{
+    margin: 0 0 10px;
+}
+
+.contact p{
+    margin: 10px 0;
+}
+
+/* 3 вертикальні іконки */
+.icons-vertical{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.icons-vertical svg{
+    margin: 0 0 10px;
 }
 
 /* /////

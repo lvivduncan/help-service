@@ -1,8 +1,14 @@
 @import url('./root.css');
-@import url('./menu-bar.css');
-@import url('./promo-bar.css');
-@import url('./nav-bar.css');
-@import url('./slider.css');
-@import url('./owl.carousel.min.css');
+@import url('./menu-block.css');
+@import url('./promo-block.css');
+@import url('./nav-block.css');
+@import url('./slider-block.css');
 @import url('./animate.css');
-@import url('./about-bar.css');
+@import url('./about-block.css');
+@import url('./service-block.css');
+@import url('./call-block.css');
+@import url('./testimonials-block.css');
+@import url('./feedback-block.css');
+@import url('./footer.css');
+
+@import url('./owl.carousel.min.css');

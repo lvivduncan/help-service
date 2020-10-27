@@ -1,22 +1,22 @@
 
 /* основне меню */
-#menu-bar{
+#menu-block{
     background: var(--bg-block);
     padding: 35px 0;
 }
 
-#menu-bar .container{
+#menu-block .container{
     grid-template-columns: auto 1fr;
     align-items: center;
     color: var(--green-ultralight);
 }
 
-#menu-bar span{
+#menu-block span{
     color: var(--green);
     font-size: 22px;
 }
 
-#menu-bar span::after{
+#menu-block span::after{
     content: '\2023';
     color: var(--green);
     display: inline-block;
@@ -24,14 +24,14 @@
     top: 2px;
 }
 
-#menu-bar nav{
+#menu-block nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
-#menu-bar nav a{
+#menu-block nav a{
     color: var(--green);
     font-size: 18px;
     text-decoration: none;
@@ -42,6 +42,6 @@
     text-align: center;
 }
 
-#menu-bar nav a:first-child{
+#menu-block nav a:first-child{
     border:none;
 }

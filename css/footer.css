@@ -1,0 +1,30 @@
+#footer{
+    margin: 120px 0 0;
+    padding: 30px 0;
+    background: var(--gray-light);
+}
+
+#footer .container{
+    grid-template-columns: repeat(6,1fr) .5fr;
+    grid-gap: 20px;
+}
+
+#footer ul,
+#footer li{
+    display: block;
+}
+
+#footer li{
+    margin: 0 0 10px;
+}
+
+#footer li a{
+    color: var(--dark);
+    text-decoration: none;
+}
+
+/**/
+#copy{
+    width: 1200px;
+    margin: 10px auto 0;
+}

@@ -1,0 +1,42 @@
+#testimonials-block{
+    padding: 100px 0;
+}
+
+#testimonials-block .container{
+    display: block;
+}
+
+#testimonials-block .item{
+    border: 1px solid var(--green);
+    border-radius: var(--radius);
+    padding: 35px;
+    display: grid;
+}
+
+#testimonials-block figure{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin: 0 0 20px;
+}
+
+#testimonials-block figcaption {
+    padding: 0 0 0 40px;
+}
+
+#testimonials-block figcaption h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+#testimonials-block figcaption svg{
+    width: 14px;
+}
+
+
+#testimonials-block blockquote{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}

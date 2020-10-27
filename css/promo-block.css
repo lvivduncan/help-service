@@ -1,0 +1,12 @@
+
+/* quick-contacts + buttton kaktuz */
+#promo-block{
+    background: var(--light);
+    padding: 40px 0;
+}
+
+#promo-block .container{
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}

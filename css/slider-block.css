@@ -1,28 +1,28 @@
 
 /* slider */
-#slider{
+#slider-block{
     padding: 140px 0;
 }
 
-#slider .container{
+#slider-block .container{
     display: block;
 }
 
-#slider .item{
+#slider-block .item{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#slider .item-text{
+#slider-block .item-text{
     width: 55%;
 }
 
-#slider .item-image{
+#slider-block .item-image{
     width: 45%;
 }
 
-#slider h3{
+#slider-block h3{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -30,47 +30,28 @@
     margin: 0 0 30px;
 }
 
-#slider .item-desc{
+#slider-block .item-desc{
     font-size: 22px;
     font-weight: 300;
     margin: 0 0 70px;
 }
 
-#slider .item-buttons{
+#slider-block .item-buttons{
     display: flex;
     align-items: flex-start;
     margin: 0 0 70px;
 }
 
-#slider .item-buttons .button{
+#slider-block .item-buttons .button{
     margin: 0 30px 0 10px;
 }
 
-#slider .item-list{
+#slider-block .item-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#slider .item-list li{
+#slider-block .item-list li{
     display: block;
-}
-
-#slider .owl-dots{
-    text-align: center;
-    margin: 50px 0 0;
-}
-
-#slider .owl-dots .owl-dot{
-    margin: 0 15px;
-    background: #e6e6e6;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    outline: none;
-}
-
-#slider .owl-dots .owl-dot:hover,
-#slider .owl-dots .owl-dot.active{
-    background: #ccc;
 }

@@ -1,0 +1,48 @@
+#service-block{
+    background: var(--light);
+    padding: 100px 0;
+}
+
+#service-block section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+
+#service-block article{
+    border-radius: var(--radius);
+    background: var(--light);
+    padding: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#service-block article figure{
+    margin: 0 0 20px;
+}
+
+#service-block article figure svg{
+    height: 100px;
+}
+
+#service-block h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 0 0 20px;
+}
+
+#service-block p{
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+#service-block span{
+    color: var(--gray-ultralight);
+    font-size: 18px;
+    margin: 20px 0 0;
+    display: inline-block;
+}

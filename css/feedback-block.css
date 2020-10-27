@@ -1,0 +1,58 @@
+#feedback-block{
+    background: var(--bg-block);
+    padding: 100px 0;
+}
+
+#feedback-block .container{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('../images/feedback-block.png') no-repeat left center / contain;
+    padding: 0 0 0 40%;
+    min-height: 450px;
+}
+
+#feedback-block form{
+    display: block;
+    width: 100%;
+}
+
+#feedback-block input,
+#feedback-block textarea{
+    padding: 25px;
+    border: 1px solid var(--green);
+    border-radius: var(--radius);
+    background: none;
+    width: 100%;
+    margin: 0 0 20px;
+    outline: none;
+    font-size: 22px;
+}
+
+#feedback-block textarea{
+    height: 260px;
+    resize: none;
+}
+
+#feedback-block .send{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#feedback-block svg{
+    width: 14px;
+    cursor: pointer;
+}
+
+#feedback-block button{
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 22px;
+    font-weight: 100;
+}

@@ -1,15 +1,15 @@
 /* logo + quick links */
-#nav-bar{
+#nav-block{
     background: var(--gray-light);
     padding: 20px 0;
 }
 
-#nav-bar .container{
+#nav-block .container{
     grid-template-columns: auto 1fr;
     align-items: center; 
 }
 
-#logo{}
+.logo{}
 
 #nav-links{
     display: flex;
