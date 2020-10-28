@@ -3,19 +3,7 @@ start root
 /////// */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-@font-face {
-    font-family: 'SegoeUI-Bold';
-    src: url('../fonts/SegoeUI-Bold.eot');
-    src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg'),
-          url('../fonts/SegoeUI-Bold.ttf') format('truetype'),
-          url('../fonts/SegoeUI-Bold.woff') format('woff'),
-          url('../fonts/SegoeUI-Bold.woff2') format('woff2');
-  
-    font-weight: bold;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap');
 
 
 *,::after,::before{
@@ -30,7 +18,7 @@ start root
 
     --green-ultralight: #88a092; /* риска в меню */
     --green-light: #89a192;
-    --green: #036838;
+    --green: rgb(3, 104, 56);
     --green-dark: #006837; /* іконки, півжирний заголовок, пункт меню */ /* 009245 */
 
     --gray-ultralight: #808080; /* від 250 грн */
@@ -59,16 +47,6 @@ img{
     max-width: 100%!important;
 }
 
-/* текст і лінки у такому блоці -- зелені */
-/* .text-green{
-    color: var(--green);
-}
-
-.text-green a{
-    color: var(--green);
-    text-decoration: underline;
-} */
-
 .text-green a:hover{
     text-decoration: none;
 }
@@ -94,6 +72,11 @@ img{
     outline: none;
     cursor: pointer;
     border: none;
+    transition: background .5s;
+}
+
+.button:hover{
+    background: var(--green);
 }
 
 /* white button */
@@ -105,14 +88,18 @@ img{
     box-shadow: none;
 }
 
+.button.bg-white:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+}
+
 h1,h2,h3,h4,h5{
-    font-family: "SegoeUI-Bold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .title{
     text-align: center;
     font-size: 40px;
-    font-family: "SegoeUI-Bold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--dark);
     margin: 0 0 40px;
     font-weight: bold;
@@ -121,7 +108,7 @@ h1,h2,h3,h4,h5{
 .title-left{
     text-align: left;
     font-size: 40px;
-    font-family: "SegoeUI-Bold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--dark);
     margin: 0 0 40px;
     font-weight: bold;

@@ -5,7 +5,7 @@
 }
 
 #footer .container{
-    grid-template-columns: repeat(6,1fr) .5fr;
+    grid-template-columns: repeat(6,1fr);
     grid-gap: 20px;
 }
 

@@ -40,8 +40,13 @@
 
     border-left: 1px solid var(--green-ultralight);
     text-align: center;
+    transition: .5s
 }
 
 #menu-block nav a:first-child{
     border:none;
+}
+
+#menu-block nav a:hover{
+    color: var(--dark);
 }

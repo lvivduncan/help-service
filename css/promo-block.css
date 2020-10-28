@@ -7,6 +7,14 @@
 
 #promo-block .container{
     align-items: center;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr) 2fr;
     grid-gap: 20px;
+}
+
+.to-shop{
+    text-align: right;
+}
+
+.to-shop svg{
+    width: 44px;
 }
