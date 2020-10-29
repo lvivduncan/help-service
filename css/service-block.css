@@ -9,6 +9,18 @@
     grid-gap: 25px;
 }
 
+@media(max-width:766px){
+    #service-block section{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    #service-block section{
+        grid-template-columns: 1fr;
+    }
+}
+
 #service-block article{
     border-radius: var(--radius);
     background: var(--light);
@@ -23,6 +35,12 @@
 
 #service-block article figure svg{
     height: 100px;
+}
+
+@media(max-width:766px){
+    #service-block article figure svg{
+        height: 60px;
+    }
 }
 
 #service-block h4{

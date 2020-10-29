@@ -13,10 +13,22 @@
     min-height: 450px;
 }
 
+@media(max-width: 776px){
+    #call-block .container{
+        padding: 0;
+        background: none;
+    }
+}
+
 .call-phones{
     font-size: 38px;
 }
 
+@media(max-width: 996px){
+    .call-phones{
+        font-size: 24px;
+    }
+}
 .call-phones a{
     color: var(--green);
     text-decoration: none;

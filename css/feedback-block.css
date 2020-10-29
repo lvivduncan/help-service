@@ -13,6 +13,19 @@
     min-height: 450px;
 }
 
+@media(max-width: 996px){
+    #feedback-block .container{
+        padding: 0 0 0 50%;
+    }
+}
+
+@media(max-width: 776px){
+    #feedback-block .container{
+        padding: 0;
+        background: none;
+    }
+}
+
 #feedback-block form{
     display: block;
     width: 100%;

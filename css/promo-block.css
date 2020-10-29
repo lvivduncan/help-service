@@ -11,10 +11,30 @@
     grid-gap: 20px;
 }
 
+@media(max-width: 776px){
+    #promo-block .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 500px){
+    #promo-block .container{
+        grid-template-columns: 1fr;
+    }
+}
+
 .to-shop{
     text-align: right;
 }
 
+@media(max-width: 776px){
+    .to-shop{
+        text-align: center;
+    }
+}
+
 .to-shop svg{
     width: 44px;
+    position: relative;
+    top: 2px;
 }

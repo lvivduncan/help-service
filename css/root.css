@@ -28,6 +28,7 @@ start root
 
     --bg-block: #e1ede6; /* окремий блок з фоном, menubar */
     --gradient: linear-gradient(90deg, #006837 0%, #009245 100%); /* градієнт для кнопки*/
+    --gradient-reverce: linear-gradient(90deg, #009245 0%, #006837 100%);
     --radius: 50px;
 }
 
@@ -58,6 +59,12 @@ img{
     margin: auto;
 }
 
+@media(max-width:1250px){
+    .container{
+        width: 95%;
+    }
+}
+
 /* green button */
 .button{
     display: inline-block;
@@ -72,11 +79,11 @@ img{
     outline: none;
     cursor: pointer;
     border: none;
-    transition: background .5s;
+    /* transition: background .5s; */
 }
 
 .button:hover{
-    background: var(--green);
+    background: var(--gradient-reverce);
 }
 
 /* white button */
@@ -86,10 +93,11 @@ img{
     border: 2px solid var(--green);
     padding: 14px 23px;
     box-shadow: none;
+    /* transition: background .5s; */
 }
 
 .button.bg-white:hover{
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
 }
 
 h1,h2,h3,h4,h5{
@@ -105,6 +113,12 @@ h1,h2,h3,h4,h5{
     font-weight: bold;
 }
 
+@media(max-width: 996px){
+    .title{
+        font-size: 30px;
+    }
+}
+
 .title-left{
     text-align: left;
     font-size: 40px;
@@ -112,6 +126,18 @@ h1,h2,h3,h4,h5{
     color: var(--dark);
     margin: 0 0 40px;
     font-weight: bold;
+}
+
+@media(max-width: 996px){
+    .title-left{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px){
+    .title-left{
+        font-size: 26px;
+    }
 }
 
 /* підпис під заголовком */
@@ -123,6 +149,25 @@ h1,h2,h3,h4,h5{
     text-align: center;
 }
 
+@media(max-width: 996px){
+    .lead{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}
+
+@media(max-width: 776px){
+    .lead{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .lead{
+        font-size: 16px;
+    }
+}
+
 .lead-left{
     font-weight: 300;
     font-size: 22px;
@@ -131,6 +176,24 @@ h1,h2,h3,h4,h5{
     text-align: left;
 }
 
+@media(max-width: 996px){
+    .lead-left{
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}
+
+@media(max-width:776px){
+    .lead-left{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .lead-left{
+        font-size: 16px;
+    }
+}
 
 /* блок з іконкою вгорі */
 .contact{

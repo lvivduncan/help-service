@@ -11,10 +11,26 @@
 
 .logo{}
 
+#mobile-nav-links{
+    display: none;
+}
+
+@media(max-width: 1240px){
+    #mobile-nav-links{
+        display: block;
+    }
+}
+
 #nav-links{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media(max-width: 1240px){
+    #nav-links{
+        display: none;
+    }
 }
 
 #nav-links a{

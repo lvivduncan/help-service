@@ -11,8 +11,7 @@ $('#carousel').owlCarousel({
     autoplay: true
 });
 
-
-
+// відгуки
 $('#testimonials').owlCarousel({
     loop: true,
     margin: 40,
@@ -28,3 +27,13 @@ $('#testimonials').owlCarousel({
         }
     }
 })
+
+// плавне підвантаження блоків
+new WOW().init();
+
+// мобільне меню
+if(window.matchMedia('(max-width: 768px)').matches){
+	$('#nav-links').addClass('mobile');
+} else {
+    $('#nav-links').removeClass('mobile');
+}

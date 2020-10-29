@@ -9,6 +9,19 @@
     grid-gap: 20px;
 }
 
+@media(max-width:776px){
+    #footer .container{
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    #footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
 #footer ul,
 #footer li{
     display: block;
@@ -27,4 +40,11 @@
 #copy{
     width: 1200px;
     margin: 10px auto 0;
+}
+
+@media(max-width: 1240px){
+    #copy{
+        width: 95%;
+        text-align: center;
+    }
 }
