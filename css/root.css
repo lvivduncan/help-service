@@ -162,6 +162,7 @@ h1,h2,h3,h4,h5{
 @media(max-width: 776px){
     .lead{
         width: 100%;
+        margin: 0 auto 40px;
     }
 }
 
@@ -183,6 +184,7 @@ h1,h2,h3,h4,h5{
     .lead-left{
         font-size: 18px;
         line-height: 1.8;
+        margin: 0 0 40px;
     }
 }
 

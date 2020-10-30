@@ -3,6 +3,12 @@
     padding: 100px 0;
 }
 
+@media(max-width: 776px){
+    #service-block{
+        padding: 40px 0;
+    }
+}
+
 #service-block section{
     display: grid;
     grid-template-columns: repeat(3,1fr);

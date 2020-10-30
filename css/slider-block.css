@@ -4,6 +4,12 @@
     padding: 140px 0;
 }
 
+@media(max-width: 776px){
+    #slider-block{
+        padding: 40px 0;
+    }
+}
+
 #slider-block .container{
     display: block;
 }

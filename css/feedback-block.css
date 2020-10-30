@@ -3,6 +3,12 @@
     padding: 100px 0;
 }
 
+@media(max-width: 776px){
+    #feedback-block{
+        padding: 40px 0;
+    }
+}
+
 #feedback-block .container{
     display: flex;
     flex-flow: column;
