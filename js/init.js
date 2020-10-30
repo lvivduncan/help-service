@@ -31,9 +31,18 @@ $('#testimonials').owlCarousel({
 // плавне підвантаження блоків
 new WOW().init();
 
-// мобільне меню
-if(window.matchMedia('(max-width: 768px)').matches){
-	$('#nav-links').addClass('mobile');
-} else {
-    $('#nav-links').removeClass('mobile');
+// top-menu
+if(window.matchMedia('(max-width: 1200px)').matches){
+	$('#mobile-nav-links').on('click', function(){
+        $('#nav-links').toggleClass('show');
+        $('#mobile-nav-links').toggleClass('active');
+    });
 }
+
+// // мобільне меню
+// if(window.matchMedia('(max-width: 1200px)').matches){
+// 	$('#nav-links').addClass('mobile');
+// } else {
+//     $('#nav-links').removeClass('mobile');
+// }
+
