@@ -37,6 +37,11 @@ body{
     font-size: 14px;
     font-weight: 500;
     color: var(--gray-dark);
+    position: static;
+}
+
+body.fixed{
+    overflow: hidden;
 }
 
 a,
@@ -79,7 +84,6 @@ img{
     outline: none;
     cursor: pointer;
     border: none;
-    /* transition: background .5s; */
 }
 
 .button:hover{
@@ -93,7 +97,6 @@ img{
     border: 2px solid var(--green);
     padding: 14px 23px;
     box-shadow: none;
-    /* transition: background .5s; */
 }
 
 .button.bg-white:hover{

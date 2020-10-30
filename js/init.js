@@ -32,17 +32,50 @@ $('#testimonials').owlCarousel({
 new WOW().init();
 
 // top-menu
+$('#mobile-nav-links').on('click', function(){
+    $('#nav-links').toggleClass('show');
+    $('#mobile-nav-links').toggleClass('active');
+});
+
+// nav-menu
 if(window.matchMedia('(max-width: 1200px)').matches){
-	$('#mobile-nav-links').on('click', function(){
-        $('#nav-links').toggleClass('show');
-        $('#mobile-nav-links').toggleClass('active');
+    
+    $('#nav').append('<span id="menu-close">&times;</span>');
+    
+    
+    // відкриваємо оффсет-меню
+    $('#menu-arrow').on('click', function(){
+        $('#nav').width('300px');
+        $('body').addClass('fixed');
+        setTimeout(function(){
+            $('#menu-close').addClass('show');
+        },500);
+    });
+
+    // закриваємо оффсет-меню
+    $('#menu-close').on('click', function(){
+
+        $('#menu-close').removeClass('show');
+        setTimeout(function(){
+            $('#nav').width('0');
+            $('body').removeClass('fixed');
+        },100);
     });
 }
 
-// // мобільне меню
-// if(window.matchMedia('(max-width: 1200px)').matches){
-// 	$('#nav-links').addClass('mobile');
-// } else {
-//     $('#nav-links').removeClass('mobile');
-// }
+// to top
+$(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#up').fadeIn();
+        } else {
+            $('#up').fadeOut();
+    }
+});
 
+$('#up').click(function(e){
+    e.preventDefault();
+    $("html, body").animate({ 
+            scrollTop: 0 
+        }, 600);
+    }
+);
