@@ -12,6 +12,10 @@
 }
 
 @media(max-width: 776px){
+    #promo-block .contact{
+        display: none;
+    }
+    
     #promo-block .container{
         grid-template-columns: repeat(2,1fr);
     }
@@ -37,4 +41,17 @@
     width: 44px;
     position: relative;
     top: 2px;
+}
+
+/* мобільний блок*/
+.mobile-contact{
+    display: none;
+}
+
+@media(max-width:776px){
+    .mobile-contact{
+        display: block;
+        line-height: 1.8;
+        text-align: justify;
+    }
 }
