@@ -30,6 +30,8 @@ start root
     --gradient: linear-gradient(90deg, #006837 0%, #009245 100%); /* градієнт для кнопки*/
     --gradient-reverce: linear-gradient(90deg, #009245 0%, #006837 100%);
     --radius: 50px;
+
+    --purpur: #6359a7; /* фіолетова кнопка */
 }
 
 body{
@@ -101,6 +103,11 @@ img{
 
 .button.bg-white:hover{
     background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+}
+
+/* фіолетова кнопка */
+.button.purpur{
+    background: var(--purpur);
 }
 
 h1,h2,h3,h4,h5{
