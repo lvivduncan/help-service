@@ -41,7 +41,7 @@
 }
 
 @media(max-width:776px){
-    .iframe .iframe-address{
+    .frame .iframe-address{
         display: none;
     }
 }

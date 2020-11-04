@@ -1,0 +1,25 @@
+#text-block{
+    margin: 100px 0;
+}
+
+#text-block ul {
+    list-style: none;
+}
+
+#text-block li{
+    margin: 20px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#text-block ul li:before {
+    content: url('../images/check.svg');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+}
