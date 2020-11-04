@@ -14,7 +14,7 @@
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
-    background: url('../images/feedback-block.png') no-repeat left center / contain;
+    background: url('../images/feedback-block.svg') no-repeat left center / contain;
     padding: 0 0 0 40%;
     min-height: 450px;
 }

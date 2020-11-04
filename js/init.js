@@ -79,3 +79,8 @@ $('#up').click(function(e){
         }, 600);
     }
 );
+
+// table responsive
+if(window.matchMedia('(max-width: 776px)').matches){
+    $('#table-block table').wrap('<div class="horizontal-scroll"></div>');
+}

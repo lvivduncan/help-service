@@ -25,6 +25,12 @@
     margin-top: 40px;
 }
 
+/* неоднозначний блок! у дизайні виглядає, як слайдер */
+#call-block.laptop .container{
+    background: url('../images/laptop.jpg') no-repeat right center / contain;
+    margin-top: 40px;
+}
+
 @media(max-width: 776px){
     #call-block .container{
         padding: 0;
