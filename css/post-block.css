@@ -1,0 +1,53 @@
+#post-block{
+    margin: 100px 0;
+}
+
+#post-block figure{
+    margin-bottom: 20px;
+}
+
+#post-block .meta{
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#post-block .meta time{
+    display: inline-block;
+}
+
+#post-block .meta .autor{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#post-block .meta .comment{
+    display: inline-block;
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+#post-block h1{
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+#post-block p{
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+#post-block ul,
+#post-block ol{
+    margin: 20px 0 20px 40px;
+}
+
+#post-block li{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 300;
+}
