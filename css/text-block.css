@@ -7,8 +7,8 @@
 }
 
 #text-block li{
-    margin: 20px 0;
-    padding-left: 30px;
+    margin: 30px 0;
+    padding-left: 40px;
     position: relative;
     font-size: 22px;
     font-weight: 300;
@@ -16,8 +16,8 @@
 
 #text-block ul li:before {
     content: url('../images/check.svg');
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     position: absolute;
     top:0;
