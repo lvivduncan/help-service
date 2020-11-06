@@ -2,6 +2,7 @@
 @import url('./menu-block.css');
 @import url('./promo-block.css');
 @import url('./nav-block.css');
+@import url('./blog-block.css');
 @import url('./slider-block.css');
 @import url('./list-services-block.css');
 @import url('./logos-block.css');
@@ -20,3 +21,4 @@
 @import url('./footer.css');
 @import url('./owl.carousel.min.css');
 @import url('./up.css');
+@import url('./pagination.css');

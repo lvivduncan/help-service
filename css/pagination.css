@@ -1,0 +1,10 @@
+.pagination{text-align:center;margin:30px 0 0}
+.pagination ul{display:inline-block}
+.pagination li{display: inline-block;margin:10px 0}
+.pagination li a{padding:10px 15px;background:var(--green);color:var(--light);text-decoration:none;transition:background .5s;border-radius:3px}
+.pagination li a:focus,.pagination li a:hover{background:var(--purpur)}
+.pagination .active{background:var(--gray)}
+.MarkupPagerNavOn a{background:var(--green)}
+.MarkupPagerNavSeparator{background:var(--purpur);display:inline-block;padding:10px;color:var(--light)}
+.pagination .MarkupPagerNavOn a{background:var(--dark);color:var(--light)}
+.pagination .MarkupPagerNavOn a:hover{color:var(--light)}
