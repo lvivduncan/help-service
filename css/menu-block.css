@@ -98,6 +98,12 @@
         font-size: 64px;
     }
     #menu-close.show{
+        right: 70px;
+    }
+}
+
+@media(max-width: 500px){    
+    #menu-close.show{
         right: 30px;
     }
 }
