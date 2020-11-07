@@ -1,0 +1,34 @@
+.share-facebook,
+.share-twitter,
+.share-twitter,
+.share-linkedin,
+.share-telegram,
+.share-viber{
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding:5px 20px;
+    display:inline-block
+}
+
+.share-facebook{
+    background:#314d91;
+}
+
+.share-twitter{
+    background:#07beed;
+}
+
+.share-linkedin{
+    background:#0072b5;
+}
+
+.share-telegram{
+    background:#38a6db;
+}
+
+.share-viber{
+    background:#7360f2;
+}
