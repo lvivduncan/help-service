@@ -1,0 +1,15 @@
+#popular-block{
+    overflow: hidden;
+}
+
+#popular-block img{
+    display: block;
+    margin: 0 0 20px;
+}
+
+#popular-block a{
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 400;
+}

@@ -3,6 +3,7 @@
 @import url('./promo-block.css');
 @import url('./nav-block.css');
 @import url('./post-block.css');
+@import url('./popular-block.css');
 @import url('./blog-block.css');
 @import url('./slider-block.css');
 @import url('./list-services-block.css');
@@ -24,3 +25,4 @@
 @import url('./up.css');
 @import url('./pagination.css');
 @import url('./gallery.css');
+@import url('./jquery.fancybox.min.css');

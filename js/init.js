@@ -26,7 +26,24 @@ $('#testimonials').owlCarousel({
             items:2
         }
     }
-})
+});
+
+// популярні пости
+$('#popular').owlCarousel({
+    loop: true,
+    margin: 40,
+    autoplay: true,
+    items: 2,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        }
+    }
+});
 
 // плавне підвантаження блоків
 new WOW().init();
