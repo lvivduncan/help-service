@@ -28,9 +28,22 @@
     margin: 20px 0;
 }
 
+@media(max-width:500px){
+    .timeline{
+        grid-template-columns: 1fr;
+    }
+}
+
 .timeline time{
     font-size: 22px;
     font-weight: 300;
+}
+
+@media(max-width: 500px){
+    .timeline time{
+        display: block;
+        margin: 20px 0
+    }
 }
 
 .timeline > div{
