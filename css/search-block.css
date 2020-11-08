@@ -1,0 +1,32 @@
+#search-block{
+    margin: 100px 0;
+    padding: 40px 0;
+}
+
+#search-block input[type="number"],
+#search-block input[type="text"]{
+    border: none;
+    border-bottom: 1px solid var(--green);
+    outline: none;
+    background: transparent;
+    padding: 10px 0;
+    width: 600px;
+    margin: 0 100px 0 0;
+    font-size: 22px;
+    color: var(--dark);
+    font-weight: 300;
+}
+
+@media(max-width:996px){
+    #search-block input[type="number"],
+    #search-block input[type="text"]{
+        width: 95%;
+        margin: 0 0 40px;
+    }
+}
+
+::placeholder{
+    font-size: 18px;
+    /* color: var(--dark); */
+    font-weight: 300;
+}

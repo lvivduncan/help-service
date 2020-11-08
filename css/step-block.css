@@ -1,0 +1,103 @@
+#step-block{
+    margin: 100px 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#step-block p{
+    margin: 0 0 20px;
+}
+
+#timeline{
+    text-align: center;
+}
+
+#timeline h4{
+    font-size: 30px;
+    padding: 10px;
+    display:block;
+}
+
+/* обгортка для 2 дат з країв та дінії з крапками */
+.timeline{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.timeline time{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.timeline > div{
+    border-bottom: 1px solid var(--green);
+    position: relative;
+    margin: 0 20px;
+}
+
+.timeline > div span{
+    width: 20px;
+    height: 20px;
+    border:1px solid var(--green);
+    background: var(--light);
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    top: -9px;
+}
+
+.timeline > div span:nth-child(1){
+    left: 0;
+    margin-left: -9px;
+}
+.timeline > div span:nth-child(2){
+    left: 33.333333%;
+    margin-left: -9px;
+}
+.timeline > div span:nth-child(3){
+    left: 66.666666%;
+    margin-left: -9px;
+}
+.timeline > div span:nth-child(4){
+    right: 0;
+    margin-right: -9px;
+}
+
+/* кроки */
+.timeline > div.one span:nth-child(1){
+    background: var(--green);
+}
+
+.timeline > div.two span:nth-child(1),
+.timeline > div.two span:nth-child(2){
+    background: var(--green);
+}
+
+.timeline > div.three span:nth-child(1),
+.timeline > div.three span:nth-child(2),
+.timeline > div.three span:nth-child(3){
+    background: var(--green);
+}
+
+.timeline > div.four span:nth-child(1),
+.timeline > div.four span:nth-child(2),
+.timeline > div.four span:nth-child(3),
+.timeline > div.four span:nth-child(4){
+    background: var(--green);
+}
+
+/* примітка */
+#notice{
+    text-align:center;
+    margin: 20px 0;
+}
+
+#notice strong{
+    font-weight: 800;
+}
+
+/* додаткова інформація */
