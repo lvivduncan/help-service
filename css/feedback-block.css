@@ -37,7 +37,7 @@
     width: 100%;
 }
 
-#feedback-block input,
+#feedback-block input[type="text"],
 #feedback-block textarea{
     padding: 25px;
     border: 1px solid var(--green);
@@ -62,9 +62,55 @@
     font-weight: 100;
 }
 
-#feedback-block svg{
-    width: 14px;
+@media(max-width: 600px){
+    #feedback-block .send{
+        flex-flow: column;
+    }
+}
+
+/* оцінка роботи */
+.rating{
+    display: inline-block;
+}
+
+@media(max-width:600px){
+    .rating{
+        margin: 10px 0
+    }
+}
+
+.rating input[type="radio"]{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.rating input[type="radio"]+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
     cursor: pointer;
+}
+
+.rating input[type="radio"]+label::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.5805 4.3565' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath transform='translate(-129.25 -238.88)' d='m131.54 238.88 0.54046 1.6641h1.7498l-1.4153 1.0283 0.54045 1.6641-1.4153-1.0284-1.4153 1.0284 0.54045-1.6641-1.4153-1.0283h1.7494z' fill='%23999'/%3E%3C/svg%3E");
+}
+
+@media(max-width: 600px){
+    .rating input[type="radio"]+label::before{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.rating input[type="radio"]:checked+label::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.5805 4.3565' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath transform='translate(-129.25 -238.88)' d='m131.54 238.88 0.54046 1.6641h1.7498l-1.4153 1.0283 0.54045 1.6641-1.4153-1.0284-1.4153 1.0284 0.54045-1.6641-1.4153-1.0283h1.7494z' fill='%23fbb03b'/%3E%3C/svg%3E");
 }
 
 #feedback-block button{

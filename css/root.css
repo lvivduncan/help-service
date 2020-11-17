@@ -250,7 +250,7 @@ h1,h2,h3,h4,h5{
 }
 
 .contact svg{
-    margin: 0 0 10px;
+    /* margin: 0 0 10px; */
     height: 26px;
 }
 
@@ -267,6 +267,21 @@ h1,h2,h3,h4,h5{
 
 .icons-vertical svg{
     margin: 0 0 10px;
+}
+
+.edit{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: maroon;
+    font-weight: 800;
+}
+
+.edit a{
+    padding: 5px;
+    color: var(--light);
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* /////

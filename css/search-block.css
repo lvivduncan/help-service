@@ -3,6 +3,17 @@
     padding: 40px 0;
 }
 
+#search-block .container{
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:996px){
+    #search-block .container{
+        display: block;
+    }    
+}
+
 #search-block input[type="number"],
 #search-block input[type="text"]{
     border: none;
@@ -23,6 +34,10 @@
         width: 95%;
         margin: 0 0 40px;
     }
+}
+
+#search-block a{
+    display: inline-block;
 }
 
 ::placeholder{

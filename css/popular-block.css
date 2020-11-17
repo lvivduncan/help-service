@@ -2,7 +2,8 @@
     overflow: hidden;
 }
 
-#popular-block img{
+#popular-block img,
+#popular-block svg{
     display: block;
     margin: 0 0 20px;
 }

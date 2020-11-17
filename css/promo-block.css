@@ -37,6 +37,25 @@
     }
 }
 
+.to-shop a{
+    display: inline-block;
+    background: var(--gradient);
+    padding: 15px 25px;
+    border-radius: var(--radius);
+    color: var(--light);
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(3,104,56,.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.to-shop a:hover{    
+    background: var(--gradient-reverce);
+}
+
 .to-shop svg{
     width: 44px;
     position: relative;

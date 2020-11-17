@@ -101,3 +101,9 @@ $('#up').click(function(e){
 if(window.matchMedia('(max-width: 776px)').matches){
     $('#table-block table').wrap('<div class="horizontal-scroll"></div>');
 }
+
+// search work
+$('#work').on('input', function(){
+    var num = $('#work').val();
+    $('#search-work').attr('href', num);
+});

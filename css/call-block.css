@@ -11,26 +11,6 @@
     min-height: 450px;
 }
 
-#call-block.problem .container{
-    background: url('../images/problem.svg') no-repeat right center / contain;
-}
-
-#call-block.diagnostic .container{
-    background: url('../images/diagnostic.svg') no-repeat right center / contain;
-    margin-top: 40px;
-}
-
-#call-block.master .container{
-    background: url('../images/master.svg') no-repeat right center / contain;
-    margin-top: 40px;
-}
-
-/* неоднозначний блок! у дизайні виглядає, як слайдер */
-#call-block.laptop .container{
-    background: url('../images/laptop.jpg') no-repeat right center / contain;
-    margin-top: 40px;
-}
-
 @media(max-width: 776px){
     #call-block .container{
         padding: 0;
