@@ -107,3 +107,14 @@ $('#work').on('input', function(){
     var num = $('#work').val();
     $('#search-work').attr('href', num);
 });
+
+
+// features for totoro =)
+if(localStorage.getItem('wowRemove')){
+    $('#promo-block .wow').removeClass('wow');
+}
+
+$('#nav a').on('click', function(e){
+    e.preventDefault();
+    localStorage.setItem('wowRemove', 1);
+});
