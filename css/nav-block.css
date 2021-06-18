@@ -4,11 +4,17 @@
     padding: 20px 0;
 }
 
+@media(max-width:996px) {
+    #nav-block{
+        display: none;
+    }
+}
+
 #nav-block .container{
     grid-template-columns: auto 1fr;
     align-items: center; 
 }
-
+/* 
 .logo{}
 
 #mobile-nav-links{
@@ -29,27 +35,25 @@
     fill: var(--green)
 }
 
-/* на кнопку клікнули */
 #mobile-nav-links.active svg{
     position: fixed;
     right: 10px;
     top: 35px;
     fill: var(--light);
 }
-
+*/
 #nav-links{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-@media(max-width: 1240px){
+/* @media(max-width: 996px){
     #nav-links{
         display: none;
     }
-}
+} */
 
-/* показуємо меню на мобільному */
 #nav-links.show{
     position: fixed;
     top: 0;
@@ -77,4 +81,4 @@
 #nav-links a:hover{
     color: var(--green);
     text-shadow: 0 0 15px rgba(3, 104, 56, 0.25);
-}
+} 

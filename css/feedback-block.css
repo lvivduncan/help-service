@@ -19,6 +19,12 @@
     min-height: 450px;
 }
 
+@media(min-width:1240px) {
+    #feedback-block .container{
+        padding: 0 0 0 36%;
+    }
+}
+
 @media(max-width: 996px){
     #feedback-block .container{
         padding: 0 0 0 50%;
@@ -62,8 +68,15 @@
     font-weight: 100;
 }
 
-@media(max-width: 600px){
+@media(max-width:996px){
     #feedback-block .send{
+        display: block;
+    }
+}
+
+@media(max-width: 776px){
+    #feedback-block .send{
+        display: flex;
         flex-flow: column;
     }
 }
