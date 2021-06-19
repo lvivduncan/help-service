@@ -30,20 +30,12 @@
                 <a href="">Виклик майстра</a>
             </div>
 
-            <!-- <div id="mobile-nav-links">
-                <svg viewBox="0 0 512 512"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg>
-            </div> -->
         </div>
     </div>
     <!-- #nav-block -->
 
     <div id="promo-block">
         <div class="container">
-
-            <!-- <div class="mobile-contact wow pulse">
-                <p>Виконуємо ремонт будь-якої техніки у короткі терміни! Також пропонуємо нову та вживану техніку</p>
-            </div> -->
-            <!-- блок тільки на мобільному -->
 
             <div class="contact wow fadeInDown">
                 <svg width="26" viewBox="0 0 7.801 7.801"><path d="M3.901.176a3.724 3.724 0 110 7.449 3.724 3.724 0 010-7.449z" fill="none" stroke="#006837" stroke-linecap="round" stroke-miterlimit="10" stroke-width=".35278"/><path d="M2.66 5.142l1.241-1.241V.952" fill="none" stroke="#006837" stroke-linecap="round" stroke-miterlimit="10" stroke-width=".35278"/></svg>
@@ -70,8 +62,17 @@
             </div>
 
             <div class="contact wow fadeInDown">
-                <form action="">
+                <form action="" class="search">
                     <input type="search">
+                    <div class="hidden-area">
+                        <h5>Назва категорії</h5>
+                        <ul>
+                            <li><a href="">Lorem, ipsum dolor.</a></li>
+                            <li><a href="">Lorem, ipsum dolor.</a></li>
+                            <li><a href="">Lorem, ipsum dolor.</a></li>
+                            <li><a href="">Lorem, ipsum dolor.</a></li>
+                        </ul>
+                    </div>
                 </form>
             </div>
 
@@ -98,8 +99,25 @@
                 <a href="">Телевізори</a>
             </nav>
 
-            <form action="" class="wow bounceInDown">
+            <form action="" class="wow bounceInDown search">
                 <input type="search">
+                <div class="hidden-area">
+                    <h5><a href="">Назва категорії</a></h5>
+                    <ul>
+                        <li><a href="">Lorem, <b>підсвічене слово</b> dolor.</a></li>
+                        <li><a href="">Lorem, ipsum <b>dolor</b>.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                        <li><a href="">Lorem, <b>підсвічене слово</b> dolor.</a></li>
+                        <li><a href="">Lorem, ipsum <b>dolor</b>.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                        <li><a href="">Lorem, <b>підсвічене слово</b> dolor.</a></li>
+                        <li><a href="">Lorem, ipsum <b>dolor</b>.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                        <li><a href="">Lorem, <b>ipsum</b> dolor.</a></li>
+                    </ul>
+                </div>
             </form>
             
             <a href="" class="button wow bounceInRight">Магазин</a>
@@ -529,7 +547,8 @@
     <!-- #footer -->
 
     <a href="#" id="up">
-        <svg viewBox="0 0 320 512"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+        <!-- <svg viewBox="0 0 320 512"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="#006837" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/></svg> -->
     </a>
 
     <script src="js/jquery.min.js"></script>

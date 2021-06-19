@@ -97,19 +97,6 @@ $('#up').click(function(e){
     }
 );
 
-// add class .sticky
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 320) {
-        $('#menu-block').addClass('sticky');
-    } else {
-        $('#menu-block').removeClass('sticky');
-
-        // del sticky
-        $('#menu-arrow').removeClass('active');
-        $('#nav').removeClass('active');
-    }
-});
-
 // table responsive
 if(window.matchMedia('(max-width: 776px)').matches){
     $('#table-block table').wrap('<div class="horizontal-scroll"></div>');
@@ -133,13 +120,94 @@ $('#nav a').on('click', function(e){
 });
 
 
+/**
+ * меню на мобільному, меню при скролі
+ */
 
-// todo: click mobile without desktop
+// add class .sticky
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 320) {
+
+        $('#menu-block').addClass('sticky');
+    } else {
+
+        if($(window).width() >= 1100){
+            $('#menu-block').removeClass('sticky');
+
+            // // del sticky
+            // $('#menu-arrow').removeClass('active');
+            // $('#nav').removeClass('active');
+        }
+
+    }
+});
+
+// чЕкаємо на виконання умови
+var flag = false;
+
+$(window).resize(function(){
+    if($(window).width() < 1100){
+
+        if(flag === false){
+
+            $('#menu-block').addClass('sticky');
+            flag = true;
+        }
+
+    } else {
+
+        if(flag === true){
+
+            $('#menu-block').removeClass('sticky');
+
+            // // del sticky
+            // $('#menu-arrow').removeClass('active');
+            // $('#nav').removeClass('active');
+
+            flag = false;
+        }
+
+    }
+});
+
+if($(window).width() < 1100){
+
+    $('#menu-block').addClass('sticky');
+} else {
+
+    $('#menu-block').removeClass('sticky');
+
+    // del sticky
+    $('#menu-arrow').removeClass('active');
+    $('#nav').removeClass('active');
+}
+
+
+
+// todo: click mobile without desktop (+ resize!!!)
 $('#menu-arrow').on('click', function(e){
     if($(this).parent().parent().hasClass('sticky')){
         $(this).toggleClass('active');
 
         // show/hide #nav
         $('#nav').toggleClass('active');
+
+        // close search
+        $('.search .hidden-area').removeClass('active');
     }
 });
+
+// пошук
+$('input[type="search"]').on('click', function(){
+
+    // close menu-arrow
+    $('#menu-arrow').removeClass('active');
+    $('#nav').removeClass('active');
+});
+
+// change from input
+$('input[type="search"]').on('input', function(){
+    
+    $(this).siblings().addClass('active');
+});
+

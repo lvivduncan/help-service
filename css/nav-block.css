@@ -4,7 +4,7 @@
     padding: 20px 0;
 }
 
-@media(max-width:996px) {
+@media(max-width:1100px) {
     #nav-block{
         display: none;
     }

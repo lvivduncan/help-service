@@ -3,6 +3,7 @@
 #menu-block {
     background: var(--bg-block);
     padding: 35px 0;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9;
@@ -21,7 +22,7 @@
 }
 
 /* мобільна версія + фіксована */
-@media(max-width:1240px){
+@media(max-width:1100px){
     #menu-block .container{
         grid-template-columns: 60px 1fr 120px;
         grid-gap: 20px;
@@ -43,7 +44,7 @@
     display: none;
 }
 
-@media(max-width:1240px) {
+@media(max-width:1100px) {
     #menu-block form{
         display: block;
     }    
@@ -57,9 +58,11 @@
     display: none;
 }
 
-@media(max-width:1240px) {
+@media(max-width:1100px) {
     #menu-block .button{
         display: block;
+        border: 3px solid var(--green);
+        padding: 14px 25px;
     }
 }
 
@@ -80,7 +83,7 @@
     background-repeat: no-repeat;
 }
 
-@media(max-width:1240px) {
+@media(max-width:1100px) {
     #menu-arrow{
         text-indent: -9999px;
 
@@ -130,7 +133,7 @@
     margin: 0 auto;
 }
 
-@media(max-width: 1240px){
+@media(max-width: 1100px){
     #nav{
         display: none;
     }
