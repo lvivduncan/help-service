@@ -12,9 +12,6 @@
 
 #menu-block.sticky {
     padding: 20px 0;
-    /* position: fixed; */
-    /* left: 0; */
-    /* width: 100%; */
 }
 
 #menu-block .container{
@@ -27,18 +24,21 @@
 /* мобільна версія + фіксована */
 @media(max-width:1100px){
     #menu-block .container{
-        grid-template-columns: 60px 1fr 120px;
+        /* grid-template-columns: 60px 1fr 60px 120px; */
+        grid-template-columns: 60px 1fr repeat(2,40px);
         grid-gap: 20px;
     }
 }
 #menu-block.sticky .container{
-    grid-template-columns: 60px 1fr 120px;
+    /* grid-template-columns: 60px 1fr 60px 120px; */
+    grid-template-columns: 60px 1fr repeat(2,40px);
     grid-gap: 20px;
 }
 @media(max-width:400px) {
     #menu-block .container,
     #menu-block.sticky .container{
-        grid-template-columns: 40px 1fr 120px;
+        grid-template-columns: 40px 1fr repeat(2,40px);
+        grid-gap: 10px;
     }      
 }
 /* мобільна версія + фіксована */
@@ -57,20 +57,74 @@
     display: block;
 }
 
-#menu-block .button{
+
+/* #menu-block .button{
     display: none;
+} */
+
+
+#menu-block .phone,
+#menu-block .shop{
+    display: none;
+    cursor: pointer;
 }
 
+
 @media(max-width:1100px) {
-    #menu-block .button{
+/*     #menu-block .button{
         display: block;
         border: 3px solid var(--green);
         padding: 14px 25px;
-    }
+    } */
+
+
 }
 
-#menu-block.sticky .button{
+/* #menu-block.sticky .button{
     display: block;
+} */
+
+
+/* кнопка телефона */
+#menu-block.sticky .phone{
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23006837'%3E%3Cpath d='M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z'/%3E%3Cpath d='M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z'/%3E%3C/svg%3E");
+    background-size: cover;
+    
+    position: relative;
+}
+
+#menu-block.sticky .shop{
+    display: block;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23006837'%3E%3Cpath d='M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z'/%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+/* @media(max-width:1100px) {
+    #menu-block .button svg{
+        display: none;
+    }    
+} */
+
+@media(max-width:400px) {
+    #menu-block .button span{
+        display: none;
+    }
+
+    #menu-block .button svg{
+        display: inline-block;
+        width:22px;
+        height: 22px;
+        fill: var(--light)
+    }    
 }
 
 /* мобільна кнопка */
@@ -80,7 +134,7 @@
     display: inline-block;
     padding-right: 20px;
 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23036838' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23036838' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
     background-size: 16px 16px;
     background-position: right center;
     background-repeat: no-repeat;
@@ -172,6 +226,12 @@
     position: absolute;
     top: -12px;
     left: 25px;
+}
+
+@media(max-width:400px) {
+    #nav.active::before {
+        left: 7px;
+    }    
 }
 
 

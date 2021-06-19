@@ -192,8 +192,8 @@ $('#menu-arrow').on('click', function(e){
         // show/hide #nav
         $('#nav').toggleClass('active');
 
-        // close search
-        $('.search .hidden-area').removeClass('active');
+        // close all .hidden-area
+        $('.hidden-area').removeClass('active');
     }
 });
 
@@ -207,7 +207,17 @@ $('input[type="search"]').on('click', function(){
 
 // change from input
 $('input[type="search"]').on('input', function(){
-    
+
     $(this).siblings().addClass('active');
+    
+    if (!this.value) {
+        $(this).removeClass('active');
+    } else {
+        $(this).addClass('active');
+    }
 });
 
+// click mobile icon phone
+$('.phone').on('click', function(){
+    $(this).children('.hidden-area').toggleClass('active');
+});
