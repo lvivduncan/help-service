@@ -46,7 +46,7 @@
 #feedback-block input[type="text"],
 #feedback-block textarea{
     padding: 25px;
-    border: 1px solid var(--green);
+    border: 3px solid var(--green);
     border-radius: var(--radius);
     background: none;
     width: 100%;
